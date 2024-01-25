@@ -29,7 +29,63 @@
 \date{ Bahman 1402}
 
 \begin{document}
-\maketitle
+	\begin{titlepage}
+	\maketitle
+	\thispagestyle{empty}
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\section{Git and GitHub}
+\subsection{Repository Initialization and Commits}
+1.Create a new GitHub repository:
+
+- Go to the GitHub website (https://github.com) and log in to your account.
+
+- Click on the "+" button in the top right corner and select "New repository" from the dropdown menu.
+
+- Give your repository a name and an optional description.
+
+- Choose  the repository to be public and add a README file.\\
+2. Clone the repository to your local machine:
+
+- Open a terminal or command prompt on your local machine.
+
+- Navigate to the directory where you want to clone the repository.
+
+- Run the following command, replacing "repository-url" with the URL of your GitHub repository:
+
+git clone repository-url\\
+3. Write your assignment document in LaTeX:\\
+4. Commit and push your changes:
+
+- Open a terminal or command prompt in the cloned repository directory.
+
+- Run the following commands to stage and commit your changes:
+
+git add .
+
+git commit -m "Initial commit"
+
+
+
+- Run the following command to push your changes to the remote repository on GitHub:
+
+git push origin master
+
+\subsection{GitHub Actions for LaTeX Compilation}
+Set up GitHub Actions for automatic PDF compilation:
+
+- In GitHub repository, click on the "Actions" tab.
+
+- Click on the "Set up a workflow yourself" link.
+
+- Replace the default YAML code with the main.yml.
+
+- Click on the "Start commit" button, provide a commit message, and click on the "Commit new file" button.\\
+Now, whenever push a tag to  GitHub repository, GitHub Actions will automatically compile  LaTeX document to a PDF and can download the compiled PDF from the "Actions" tab.
+
+
 
 
 \end{document}	
